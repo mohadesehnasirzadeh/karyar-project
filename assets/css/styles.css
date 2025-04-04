@@ -1707,3 +1707,127 @@ body {
     width: 100%;
   }
 }
+
+
+.food-showcase {
+  position: relative;
+  width: 100%;
+
+  height: 100vh;
+  background-image: url("/assets/images/menu372x.jpg");
+
+  /* background-size: start;
+  background-position: start; */
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.food-showcase__container {
+  position: relative;
+
+  height: 100%;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.food-showcase__info-box {
+  background-color: #000;
+  color: #fff;
+
+  padding: 3rem;
+
+  max-width: 440px;
+  position: relative;
+
+  margin-left: 10%;
+  z-index: 2;
+}
+
+.food-showcase__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.food-showcase__divider {
+  width: 4rem;
+  height: 3px;
+  background-color: #fff;
+  margin: 2rem 0;
+}
+
+.food-showcase__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.food-showcase__button {
+  display: inline-block;
+
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #fff;
+  color: #fff;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.food-showcase__button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.food-showcase__price {
+  position: absolute;
+  right: 5%;
+  top: 33%;
+
+  font-size: 1.5rem;
+  color: #fff;
+
+  font-weight: bold;
+  z-index: 2;
+}
+
+@media (max-width: 576px) {
+  .food-showcase__info-box {
+    padding: 1.5rem;
+    max-width: 280px;
+
+    margin-left: 0;
+  }
+
+  .food-showcase__title {
+    font-size: 2rem;
+  }
+
+  .food-showcase__actions {
+    bottom: 1rem;
+
+    right: 1rem;
+
+    top: auto;
+    transform: none;
+    flex-direction: row;
+  }
+
+  .food-showcase__price {
+    top: 15%;
+    right: 5%;
+    font-size: 1.2rem;
+  }
+}
