@@ -535,3 +535,120 @@ body {
 .food-section {
   animation: fadeIn 0.5s ease-out forwards;
 }
+
+
+.rf-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.rf-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 40px;
+}
+
+.rf-feature {
+  flex: 1;
+  min-width: 300px;
+
+  max-width: 350px;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.rf-icon-container {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.rf-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.rf-icon-circle {
+  fill: none;
+  stroke: #e8e8e8;
+  stroke-width: 1;
+}
+
+.rf-icon-path {
+  fill: #333333;
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+.rf-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+
+  color: #333333;
+
+  letter-spacing: 0.5px;
+}
+
+.rf-divider {
+  width: 40px;
+
+  height: 2px;
+  background-color: #e0e0e0;
+
+  margin-bottom: 20px;
+}
+
+.rf-description {
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #666666;
+
+  margin-bottom: 30px;
+}
+
+.rf-button {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid #d0d0d0;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rf-button:hover {
+  background-color: #f5f5f5;
+
+  border-color: #999999;
+}
+
+@media (max-width: 768px) {
+  .rf-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rf-feature {
+    width: 100%;
+    max-width: 450px;
+  }
+}
