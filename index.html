@@ -5,10 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Avada Restaurant</title>
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.svg"
+      type="image/x-icon"
+    />
 </head>
 <body>
-  <h1>Avada Restaurant</h1>
+  <div class="black-section">
+    <div class="max-container">
+      <div class="navbar">
+        <div class="logo-container">
+          <img src="/assets/images/logo-restaurant.png" alt="logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="nav-link"
+              ><span
+                >Home
+                <i
+                  data-lucide="chevron-down"
+                  style="height: 0.86em; width: 0.86em"
+                ></i></span
+            >
+          </a>
+          <div class="dropdown-wrapper">
+            <ul>
+              <li>Home 1</li>
+              <li>Home 2</li>
+            </ul>
+          </div>
+          </li>
+          <li><a href="#" class="nav-link">History</a></li>
+          <li><a href="#" class="nav-link">Team</a></li>
+          <li><a href="#" class="nav-link">Menu</a></li>
+          <li><a href="#" class="nav-link">Takeout</a></li>
+          <li><a href="#" class="nav-link">Bulletin</a></li>
+          <!-- <li><a href="#" class="nav-link">Login</a></li> -->
+          <li><a href="#" class="nav-link">Reservations</a></li>
+          <li>
+            <a href="#" class="nav-link cart-icon">
+              <!-- <i
+                data-lucide="shopping-basket"
+                style="height: 1.3em; width: 1.3em"
+              ></i> -->
+              <i
+                data-lucide="shopping-basket"
+                style="height: 1em; width: 1em"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-section">
+        <div class="hero-content">
+          <p class="tagline">THE BEST TABLE IN TOWN</p>
+          <h2 class="hero-title">FINE DINING<br />EXPERIENCE</h2>
+          <p class="hero-description">
+            Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus
+            scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.
+          </p>
+          <a href="#" class="cta-button">BUY AVADA TODAY</a>
+        </div>
+        <div class="hero-image">
+          <img src="/assets/images/slider.jpg" alt="image" />
+          <div class="hero-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="/assets/js/scripts.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 </body>
 </html>
