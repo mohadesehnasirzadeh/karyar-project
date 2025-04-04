@@ -652,3 +652,172 @@ body {
     max-width: 450px;
   }
 }
+
+
+.fd-section {
+  display: flex;
+
+  width: 100%;
+  background-color: transparent;
+
+  overflow: hidden;
+}
+
+.fd-container {
+  display: flex;
+  width: 100%;
+}
+
+.fd-image-container {
+  width: 60%;
+  overflow: hidden;
+  height: 850px;
+}
+
+.fd-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+.fd-content {
+  width: 40%;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;
+  background-color: #000;
+
+  color: white;
+  position: relative;
+}
+
+.fd-subtitle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.fd-line {
+  width: 3rem;
+  height: 1px;
+  background-color: white;
+
+  margin-right: 1rem;
+}
+
+.fd-subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.fd-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.fd-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.fd-button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.fd-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.fd-icons {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+}
+
+.fd-icon-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-left: 1rem;
+}
+
+.fd-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+  color: black;
+
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.fd-icon-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.fd-icon-text {
+  font-size: 0.75rem;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .fd-container {
+    flex-direction: column;
+  }
+
+  .fd-image-container,
+  .fd-content {
+    width: 100%;
+  }
+
+  .fd-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .fd-content {
+    padding: 3rem 2rem;
+  }
+
+  .fd-title {
+    font-size: 2rem;
+  }
+
+  .fd-description {
+    font-size: 1rem;
+  }
+}
