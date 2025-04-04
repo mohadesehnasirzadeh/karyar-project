@@ -43,3 +43,30 @@ testimonials.map((item, index) => {
 
   document.getElementById("testimonials-container").appendChild(cardElm);
 });
+
+
+fetch("/data/news.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.map((item, index) => {
+      document.getElementById("news-grid").innerHTML += `
+                <div class="news-card">
+                  <div class="news-image-container">
+                    <img
+                      src="/assets/images/blog/${item.image}"
+                      alt="${item.title}"
+                      class="news-image"
+                    />
+                  </div>
+                  <h3 class="news-card-title">${item.title}</h3>
+                  <div class="news-card-meta">
+                    <span class="news-author">By ${item.user}</span>
+                    <span class="news-published"
+                      >Published On: ${item.date}</span
+                    >
+                    <span class="news-categories">Categories: ${item.category}</span>
+                  </div>
+                </div>`;
+    });
+  })
+  .catch((error) => console.error("Error fetching JSON:", error));
