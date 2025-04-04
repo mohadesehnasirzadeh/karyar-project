@@ -70,3 +70,26 @@ fetch("/data/news.json")
     });
   })
   .catch((error) => console.error("Error fetching JSON:", error));
+
+
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+function toggleVisibility() {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.style.display = "flex";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+window.addEventListener("scroll", toggleVisibility);
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+toggleVisibility();
